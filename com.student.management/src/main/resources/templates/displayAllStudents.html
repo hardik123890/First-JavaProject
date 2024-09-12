@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Displaying All Student here</title>
+</head>
+<body>
+	<h2>All Student Details</h2>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Roll</th>
+				<th>Name</th>
+				<th>Branch</th>
+				<th>YOP</th>
+				<th>CGPA</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each = "st:${studentList}">
+				<td th:text = "${st.roll}"></td>
+				<td th:text = "${st.name}"></td>
+				<td th:text = "${st.branch}"></td>
+				<td th:text = "${st.yop}"></td>
+				<td th:text = "${st.cgpa}"></td>
+			</tr>
+		</tbody>
+	
+	</table>
+	
+</body>
+</html>
